@@ -9,11 +9,12 @@ import { FAQ } from "@/components/faq";
 import { FashionBrand } from "@/components/fashion-brand";
 import { Footer } from "@/components/footer";
 import MyJourneyPage from "@/components/timeline";
+import NavBar from "@/components/navbar";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black overflow-hidden">
-      <Header />
+      <NavBar />
       <Hero />
       {/* <HowItWorks /> */}
       <MyJourneyPage />

@@ -21,7 +21,8 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-yellow-500/20 via-orange-600/10 to-black pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(253,224,71,0.2),_rgba(100,10,12,0.12),_black)] pointer-events-none" />
+
 
       {/* Animated sparkles */}
       {sparkles.map((sparkle) => (
@@ -39,20 +40,20 @@ export function Hero() {
       ))}
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-        <div className="mb-6 inline-block">
+        {/* <div className="mb-6 inline-block">
           <span className="px-4 py-2 bg-yellow-500/20 border border-yellow-400/50 rounded-full text-yellow-300 text-sm font-semibold">
             ✨ Turn Saving Into Winning ✨
           </span>
-        </div>
+        </div> */}
 
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-white text-balance">
-          Save Smart,{" "}
+          Turn Your Savings{" "}
           <span className="bg-gradient-to-r from-yellow-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-            Win Big
+            Into Amazing Prizes!
           </span>
         </h1>
 
-        <p className="text-xl sm:text-2xl text-gray-300 mb-8 text-balance max-w-2xl mx-auto">
+        <p className="text-xl sm:text-2xl text-gray-300 mb-8 text-balance max-w-2xl lg:max-w-3xl mx-auto">
           Join thousands of winners earning amazing rewards while saving. Every rupee saved is a chance to win gold,
           vehicles, cash, and more!
         </p>
