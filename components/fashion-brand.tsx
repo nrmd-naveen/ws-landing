@@ -1,0 +1,83 @@
+"use client"
+
+import { ArrowRight } from "lucide-react"
+
+export function FashionBrand() {
+  const collections = [
+    {
+      name: "Festive Sarees",
+      image: "/elegant-traditional-saree-with-gold-embroidery.jpg",
+    },
+    {
+      name: "Sherwanis",
+      image: "/luxurious-sherwani-for-weddings.jpg",
+    },
+    {
+      name: "Kurta Sets",
+      image: "/premium-kurta-set-ethnic-wear.jpg",
+    },
+    {
+      name: "Lehengas",
+      image: "/beautiful-lehenga-choli-traditional.jpg",
+    },
+  ]
+
+  return (
+    <section className="py-20 px-4 bg-black relative overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-yellow-500/5 via-transparent to-orange-500/5 pointer-events-none" />
+      <div className="absolute top-1/2 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h3 className="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-4">Beyond Savings</h3>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Other Ventures</h2>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            Discover our premium clothing brand designed for festivals and functions, celebrating elegance, culture, and
+            craftsmanship.
+          </p>
+        </div>
+
+        {/* Collections Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {collections.map((collection, index) => (
+            <div key={index} className="group relative overflow-hidden rounded-lg">
+              {/* Image Container */}
+              <div className="relative h-80 overflow-hidden rounded-lg border border-yellow-500/30 group-hover:border-yellow-500/60 transition-all duration-300">
+                <img
+                  src={collection.image || "/placeholder.svg"}
+                  alt={collection.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+
+              {/* Label */}
+              <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <p className="text-yellow-400 font-bold text-lg">{collection.name}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center">
+          <button className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-yellow-500/50">
+            Explore Our Fashion Brand
+            <ArrowRight size={20} />
+          </button>
+        </div>
+
+        {/* Brand Message */}
+        <div className="mt-16 p-8 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-lg text-center">
+          <p className="text-white text-lg leading-relaxed">
+            Our premium clothing line combines traditional craftsmanship with modern elegance. Perfect for weddings,
+            festivals, and celebrations—each piece tells a story of culture and sophistication.
+          </p>
+        </div>
+      </div>
+    </section>
+  )
+}
