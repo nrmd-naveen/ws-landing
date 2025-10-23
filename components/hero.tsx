@@ -25,7 +25,7 @@ export function Hero() {
 
 
       {/* Animated sparkles */}
-      {sparkles.map((sparkle) => (
+      {/* {sparkles.map((sparkle) => (
         <div
           key={sparkle.id}
           className="absolute animate-pulse"
@@ -37,14 +37,10 @@ export function Hero() {
         >
           <Sparkles className="text-yellow-400" size={20} />
         </div>
-      ))}
+      ))} */}
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-        {/* <div className="mb-6 inline-block">
-          <span className="px-4 py-2 bg-yellow-500/20 border border-yellow-400/50 rounded-full text-yellow-300 text-sm font-semibold">
-            ✨ Turn Saving Into Winning ✨
-          </span>
-        </div> */}
+
 
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-white text-balance">
           Turn Your Savings{" "}

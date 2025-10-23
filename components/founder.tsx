@@ -60,7 +60,7 @@ export function Founder() {
 
               <div className="pt-4">
                 <p className="text-yellow-200 font-bold text-lg">
-                  Founder & CEO, Winnerspin
+                  A SHYLAJA Founder & CEO, Winnerspin
                 </p>
               </div>
             </div>

@@ -10,12 +10,14 @@ import { FashionBrand } from "@/components/fashion-brand";
 import { Footer } from "@/components/footer";
 import MyJourneyPage from "@/components/timeline";
 import NavBar from "@/components/navbar";
+import { AboutUs } from "@/components/aboutUs";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black overflow-hidden">
       <NavBar />
       <Hero />
+      <AboutUs />
       {/* <HowItWorks /> */}
       <MyJourneyPage />
       <WhyChoose />

@@ -1,12 +1,13 @@
-"use client"
+"use client";
 
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export function FashionBrand() {
   const collections = [
     {
       name: "Festive Sarees",
-      image: "/elegant-traditional-saree-with-gold-embroidery.jpg",
+      image: "/image23.png",
     },
     {
       name: "Sherwanis",
@@ -20,7 +21,7 @@ export function FashionBrand() {
       name: "Lehengas",
       image: "/beautiful-lehenga-choli-traditional.jpg",
     },
-  ]
+  ];
 
   return (
     <section className="py-20 px-4 bg-black relative overflow-hidden">
@@ -31,10 +32,15 @@ export function FashionBrand() {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <h3 className="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-4">Beyond Savings</h3>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Other Ventures</h2>
+          <h3 className="text-yellow-500 text-sm font-bold uppercase tracking-widest mb-4">
+            Beyond Savings
+          </h3>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Our Other Ventures
+          </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Discover our premium clothing brand designed for festivals and functions, celebrating elegance, culture, and
+            Discover Spin & Co, our premium clothing brand designed for
+            festivals and functions, celebrating elegance, culture, and
             craftsmanship.
           </p>
         </div>
@@ -42,7 +48,10 @@ export function FashionBrand() {
         {/* Collections Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {collections.map((collection, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-lg">
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-lg"
+            >
               {/* Image Container */}
               <div className="relative h-80 overflow-hidden rounded-lg border border-yellow-500/30 group-hover:border-yellow-500/60 transition-all duration-300">
                 <img
@@ -56,7 +65,9 @@ export function FashionBrand() {
 
               {/* Label */}
               <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <p className="text-yellow-400 font-bold text-lg">{collection.name}</p>
+                <p className="text-yellow-400 font-bold text-lg">
+                  {collection.name}
+                </p>
               </div>
             </div>
           ))}
@@ -73,11 +84,14 @@ export function FashionBrand() {
         {/* Brand Message */}
         <div className="mt-16 p-8 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 border border-yellow-500/30 rounded-lg text-center">
           <p className="text-white text-lg leading-relaxed">
-            Our premium clothing line combines traditional craftsmanship with modern elegance. Perfect for weddings,
-            festivals, and celebrations—each piece tells a story of culture and sophistication.
+            Spin & Co is a clothing brand that blends tradition with modern
+            fashion. Every piece is crafted with care, combining quality,
+            comfort, and culture. After earning trust through our offline
+            stores, we’re now bringing the same experience online soon — so you
+            can shop your favourite styles with ease and confidence.
           </p>
         </div>
       </div>
     </section>
-  )
+  );
 }
