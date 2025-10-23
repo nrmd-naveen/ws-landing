@@ -22,17 +22,17 @@ const NavBar = () => {
         </div>
 
         <div className="w-80  flex justify-center sm:justify-around md:text-lg font-bold">
-          <button className="cursor-pointer hidden sm:block text-[#dfee07]  hover:text-white">
+          <button className=" bg-clip-text text-transparent cursor-pointer hidden sm:block bg-gradient-to-b hover:scale-102 from-yellow-300 to-orange-500 text-xl">
             Our Services
           </button>
           <div></div>
-          <button className="cursor-pointer sm:text-lg  flex justify-center text-[#dfee07]  hover:text-white">
-            Contact us
+          <button className=" bg-clip-text text-transparent cursor-pointer hidden sm:block bg-gradient-to-b hover:scale-102 from-yellow-300 to-orange-500 text-xl">
+              Contact us
           </button>
         </div>
-        <div className="bg-[#dfee07]  hover:bg-white w-25 sm:h-10 h-8 rounded-3xl flex justify-center items-center">
-          <button className="cursor-pointer   text-black tracking-wide ">
-            login
+        <div className="bg-gradient-to-br cursor-pointer  from-yellow-300 to-orange-600 hover:scale-105 transition-transform duration-300 hover:bg-white w-25 sm:h-10 h-8 rounded-3xl flex justify-center items-center">
+          <button className="font-bold text-neutral-800 tracking-wide cursor-pointer  ">
+            Login
           </button>
         </div>
       </div>

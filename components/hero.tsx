@@ -25,7 +25,7 @@ export function Hero() {
 
 
       {/* Animated sparkles */}
-      {sparkles.map((sparkle) => (
+      {/* {sparkles.map((sparkle) => (
         <div
           key={sparkle.id}
           className="absolute animate-pulse"
@@ -37,7 +37,7 @@ export function Hero() {
         >
           <Sparkles className="text-yellow-400" size={20} />
         </div>
-      ))}
+      ))} */}
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         {/* <div className="mb-6 inline-block">
@@ -49,7 +49,7 @@ export function Hero() {
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-white text-balance">
           Turn Your Savings{" "}
           <span className="bg-gradient-to-r from-yellow-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
-            Into Amazing Prizes!
+            Into Amazing Gifts!
           </span>
         </h1>
 
@@ -60,10 +60,10 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <button className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-600 text-black font-bold text-lg rounded-lg hover:shadow-2xl hover:shadow-yellow-400/50 transition transform hover:scale-105">
-            Spin to Win
+            Join Now
           </button>
           <button className="px-8 py-4 border-2 border-yellow-400 text-yellow-400 font-bold text-lg rounded-lg hover:bg-yellow-400/10 transition">
-            Start Saving Today
+            Login
           </button>
         </div>
 
@@ -73,8 +73,8 @@ export function Hero() {
             <p className="text-gray-400 text-sm">Active Winners</p>
           </div>
           <div>
-            <p className="text-3xl font-bold text-orange-500">₹10Cr+</p>
-            <p className="text-gray-400 text-sm">Prizes Awarded</p>
+            <p className="text-3xl font-bold text-orange-500">₹10L+</p>
+            <p className="text-gray-400 text-sm">Gifts & Rewards</p>
           </div>
           <div>
             <p className="text-3xl font-bold text-yellow-400">100%</p>
