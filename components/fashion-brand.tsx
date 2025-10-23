@@ -7,19 +7,19 @@ export function FashionBrand() {
   const collections = [
     {
       name: "Festive Sarees",
-      image: "/image23.png",
+      image: "/saree.png",
     },
     {
       name: "Sherwanis",
-      image: "/luxurious-sherwani-for-weddings.jpg",
+      image: "/sherwani.png",
     },
     {
       name: "Kurta Sets",
-      image: "/premium-kurta-set-ethnic-wear.jpg",
+      image: "/kurta.png",
     },
     {
       name: "Lehengas",
-      image: "/beautiful-lehenga-choli-traditional.jpg",
+      image: "/lehanga.png",
     },
   ];
 
@@ -39,9 +39,7 @@ export function FashionBrand() {
             Our Other Ventures
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Discover Spin & Co, our premium clothing brand designed for
-            festivals and functions, celebrating elegance, culture, and
-            craftsmanship.
+            Discover Spin & Co, our premium clothing brand designed for festivals and functions, celebrating elegance, culture, and craftsmanship.
           </p>
         </div>
 
@@ -74,10 +72,9 @@ export function FashionBrand() {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center">
-          <button className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-yellow-500/50">
-            Explore Our Fashion Brand
-            <ArrowRight size={20} />
+        <div className="text-center w-full flex justify-center">
+        <button disabled={true} className="px-8 py-4 border-2 border-yellow-400 text-yellow-400 font-bold text-lg rounded-lg bg-yellow-400/10 transition flex justify-center items-center gap-2">
+            Coming Soon Online <ArrowRight size={20} />
           </button>
         </div>
 

@@ -163,7 +163,7 @@ export function Testimonials() {
           </div>
 
           {/* Dots */}
-          <div className="flex justify-center gap-2 mt-16 md:mt-8">
+          <div className="flex justify-center gap-2 mt-24 md:mt-8">
             {testimonials.map((_, index) => (
               <button
                 key={index}
