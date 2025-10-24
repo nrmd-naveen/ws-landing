@@ -15,7 +15,7 @@ import { AboutUs } from "@/components/aboutUs";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black overflow-hidden">
-      <NavBar />
+      {/* <NavBar /> */}
       <Hero />
       <AboutUs />
       {/* <HowItWorks /> */}

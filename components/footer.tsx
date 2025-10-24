@@ -1,4 +1,5 @@
 import { ArrowRight, ArrowUpToLineIcon, Instagram, MessageCircle, MessageCircleMore, Phone, PhoneCall } from "lucide-react";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -7,7 +8,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
+              <Link href={'/'}>
               <img src="/Logo.png" alt="logo" className="h-10 w-15 sm:h-12 md:h-14 scale-[3.5] sm:scale-[3] ml-8" />
+              </Link>
             </div>
             <p className="text-gray-400 text-sm">Turn saving into winning</p>
           </div>
@@ -37,7 +40,7 @@ export function Footer() {
             <h4 className="text-white font-semibold mb-4">Socials</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="#" className="hover:text-yellow-400 transition flex gap-1">
+                <a href="https://www.instagram.com/winnerspinofficial" target="_blank"  className="hover:text-yellow-400 transition flex gap-1">
                   <Instagram className="h-4 mt-px" />Instagram 
                 </a>
               </li>
@@ -58,17 +61,17 @@ export function Footer() {
             <h4 className="text-white font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="#" className="hover:text-yellow-400 transition">
+                <a href="/terms" className="hover:text-yellow-400 transition">
                   Privacy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-400 transition">
+                <a href="/terms" className="hover:text-yellow-400 transition">
                   Terms
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-yellow-400 transition">
+                <a href="/terms" className="hover:text-yellow-400 transition">
                   Compliance
                 </a>
               </li>

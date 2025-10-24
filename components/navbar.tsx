@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import logo from "@/public/Logo.png";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -13,12 +14,14 @@ const NavBar = () => {
         rounded-4xl border-[1px] sm:border-[0.5px] border-white/50 sm:border-white/50"
       >
         <div className="flex items-center ">
+        <Link href={'/'}>
           <Image
             src={logo}
             alt="logo"
             className="cursor-pointer h-10 w-15 sm:h-12 md:h-14 scale-[3.5] sm:scale-[3] origin-left"
             style={{ transformOrigin: "25% center" }}
           />
+        </Link>
         </div>
 
         <div className="w-80  flex justify-center sm:justify-around md:text-lg font-bold">
@@ -30,8 +33,8 @@ const NavBar = () => {
               Contact us
           </button>
         </div>
-        <div className="bg-gradient-to-br cursor-pointer  from-yellow-300 to-orange-600 hover:scale-105 transition-transform duration-300 hover:bg-white w-25 sm:h-10 h-8 rounded-3xl flex justify-center items-center">
-          <button className="font-bold text-neutral-800 tracking-wide cursor-pointer  ">
+        <div className="bg-gradient-to-br cursor-pointer border border-orange-200 from-yellow-300 to-orange-600 hover:scale-105 transition-transform duration-300 hover:bg-white w-25 sm:h-10 h-8 rounded-3xl flex justify-center items-center">
+          <button className="font-bold text-neutral-700/90 tracking-wide cursor-pointer  ">
             Login
           </button>
         </div>
